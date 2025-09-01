@@ -1,2 +1,3 @@
-# starter
-Basic Starter Repository
+## Hobby Project
+
+Coding?
