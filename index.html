@@ -17,7 +17,7 @@
         <a href="flappy.html">ML Flappy Bird</a> |
         <a href="whiteboard.html">Whiteboard App</a> |
         <a href="blackjack.html">Blackjack</a> |
-        <a href="disney.html">DisneyGPT</a>
+        <!-- <a href="disney.html">DisneyGPT</a> -->
     </nav>
 
     <main>
@@ -42,12 +42,69 @@
                 <a href="blackjack.html" class="button">Learn More</a>
             </div>
 
-            <div class="project-box">
+            <!-- <div class="project-box">
                 <h3>DisneyGPT</h3>
                 <p>Disney internal chatbot</p>
                 <a href="disney.html" class="button">Learn More</a>
-            </div>
+            </div> -->
         </div>
     </main>
+
+    <br>
+
+    <footer>
+        <div id="webring" style="text-align: center;">
+            <a id="prev" href="#" class="button">← Previous</a>
+            <a id="random" href="#" class="button">Random</a>
+            <a id="next" href="#" class="button">Next →</a>
+            <select id="webring-select" class="button"></select>
+        </div>
+    </footer>
+    
+    <script>
+        const sites = [
+            "https://lehigh-university-design.github.io/project-1-web-ring-efl226/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-tpu221/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-nic627/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-rtj226/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-Joshlopez1127/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-emmav10/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-hef226/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-npc227/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-bsl226-alt/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-zad326/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-CharlieYurman/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-cjk226/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-juk327/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-vincent325/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-cln226/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-alicez01/",
+            "https://lehigh-university-design.github.io/project-1-web-ring-elisa-brear/"
+        ];
+
+        // Find current site
+        const current = sites.findIndex(s => location.href.includes(s));
+        const i = current === -1 ? 0 : current;
+
+        // Set the links
+        document.getElementById('prev').href = sites[i > 0 ? i - 1 : sites.length - 1];
+        document.getElementById('random').href = sites[Math.floor(Math.random() * sites.length)];
+        document.getElementById('next').href = sites[i < sites.length - 1 ? i + 1 : 0];
+
+        // dropdown
+        const select = document.getElementById('webring-select');
+        sites.forEach(site => {
+            const option = document.createElement('option');
+            option.value = site;
+            option.textContent = site.split('/')[3];
+            select.appendChild(option);
+        });
+
+        select.addEventListener('change', function() {
+            if (this.value) {
+                window.location.href = this.value;
+            }
+        });
+    </script>
 </body>
 </html>
