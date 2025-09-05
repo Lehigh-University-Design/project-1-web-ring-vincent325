@@ -1,12 +1,18 @@
 body {
     font-family: 'Courier New', monospace;
-    background-color: #000000;
-    color: white;
+    background-color: #090b14;
+    color: #e0f2fe;
+    background-image: 
+        linear-gradient(rgba(9, 148, 176, 0.25) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(9, 148, 176, 0.25) 1px, transparent 1px);
+    background-size: 40px 40px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 header {
-    background-color: #000000;
-    color: white;
+    color: #00d4ff;
     text-align: center;
     padding: 30px;
 }
@@ -18,11 +24,10 @@ header h1 {
 }
 
 header p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 nav {
-    background-color: #000000;
     text-align: center;
     padding: 15px;
     color: white; 
@@ -39,6 +44,10 @@ nav {
     margin: 5px;
     box-shadow: 0 0 20px #17ffff;
     cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .button:hover, nav a:hover {
@@ -52,37 +61,35 @@ main {
     text-align: center;
 }
 
-.main-title {
-    text-align: center;
-    color: #17ffff;
-    font-size: 32px;
-    margin-bottom: 30px;
-    text-shadow: 0 0 20px #17ffff;
-}
-
 .projects {
-    text-align: center;
     max-width: 1000px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
 }
 
 .project-box {
-    background-color: white;
-    width: 300px;
+    background-color: rgba(1, 58, 116, 0.6);
+    border: 1px solid #17ffff;
+    min-width: 300px;  
     padding: 20px;
-    margin: 10px;
-    display: inline-block;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    flex-shrink: 0;  
+}
+
+.project-box:hover {
+    box-shadow: 0 0 30px #17ffff;
+    transform: scale(1.05);
 }
 
 .project-box h3 {
-    color: #2c3e50;
+    color: #17ffff;
     font-size: 18px;
 }
 
 .project-box p {
-    color: #666;
+    color: #88ddff;
     font-size: 14px;
 }
 
@@ -90,9 +97,34 @@ main {
 .project-image {
     width: 750px;
     height: auto;
+    border: 1px solid #17ffff;
+    box-shadow: 0 0 10px #17ffff;
 }
 
 .gif-image {
     width: 300px;
     height: auto;
+    border: 1px solid #17ffff;
+    box-shadow: 0 0 10px #17ffff;
+}
+
+/* Terminal Container */
+.terminal {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #000;
+    border: 2px solid #17ffff;
+    box-shadow: 0 0 30px #17ffff;
+}
+
+.terminal-header {
+    background-color: #111;
+    padding: 10px;
+    border-bottom: 1px solid #17ffff;
+    color: #17ffff;
+}
+
+.terminal-body {
+    padding: 20px;
+    color: #17ffff;
 }
