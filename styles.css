@@ -6,8 +6,9 @@ body {
         linear-gradient(rgba(9, 148, 176, 0.25) 1px, transparent 1px),
         linear-gradient(90deg, rgba(9, 148, 176, 0.25) 1px, transparent 1px);
     background-size: 40px 40px;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -24,17 +25,29 @@ header h1 {
 }
 
 header p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 nav {
     text-align: center;
     padding: 15px;
     color: white; 
-    font-size: 18px; 
+    font-size: 16px; 
 }
 
-.button, nav a {
+nav a {
+    color: #17ffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #39c6c6;
+}
+
+.button {
     background-color: transparent;
     color: #17ffff;
     border: 2px solid #17ffff;
@@ -44,14 +57,14 @@ nav {
     margin: 5px;
     box-shadow: 0 0 20px #17ffff;
     cursor: pointer;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
-    font-size: 16px;
 }
 
-.button:hover, nav a:hover {
-    background-color: #17ffff;
+.button:hover {
+    background-color: #39c6c6;
     color: black;
     box-shadow: 0 0 40px #17ffff;
 }
@@ -112,16 +125,35 @@ main {
 .terminal {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #000;
+    background-color: #000000;
     border: 2px solid #17ffff;
     box-shadow: 0 0 30px #17ffff;
 }
 
 .terminal-header {
     background-color: #111;
-    padding: 10px;
+    padding: 5px 15px;
     border-bottom: 1px solid #17ffff;
     color: #17ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dots {
+    font-size: 30px;
+}
+
+.red {
+    color: #ff5f56;
+}
+
+.yellow {
+    color: #ffbd2e;
+}
+
+.green {
+    color: #27c93f;
 }
 
 .terminal-body {
