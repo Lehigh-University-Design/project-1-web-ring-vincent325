@@ -29,15 +29,22 @@ nav {
     font-size: 18px; 
 }
 
-nav a {
-    color: white;
-    padding: 15px;
+.button, nav a {
+    background-color: transparent;
+    color: #17ffff;
+    border: 2px solid #17ffff;
+    padding: 10px 30px;
     text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 0 20px #17ffff;
     cursor: pointer;
 }
 
-nav a:hover {
-    background-color: #2c3e50;
+.button:hover, nav a:hover {
+    background-color: #17ffff;
+    color: black;
+    box-shadow: 0 0 40px #17ffff;
 }
 
 main {
@@ -79,17 +86,6 @@ main {
     font-size: 14px;
 }
 
-.button {
-    background-color: #3d546c;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    border: none; 
-    cursor: pointer;
-    font-size: 16px;
-}
 
 .project-image {
     width: 750px;
