@@ -1,27 +1,28 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Courier New', monospace;
+    background-color: #000000;
+    color: white;
 }
 
-/* index.html header styles */
 header {
-    background-color: #3d546c;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 30px;
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 48px;
+    color: #17ffff;
+    text-shadow: 0 0 30px #17ffff;
 }
 
 header p {
     font-size: 16px;
 }
 
-/* index.html nav styles */
 nav {
-    background-color: #34495e;
+    background-color: #000000;
     text-align: center;
     padding: 15px;
     color: white; 
@@ -46,12 +47,12 @@ main {
 
 .main-title {
     text-align: center;
-    color: #2c3e50;
+    color: #17ffff;
     font-size: 32px;
     margin-bottom: 30px;
+    text-shadow: 0 0 20px #17ffff;
 }
 
-/* index.html main project boxes */
 .projects {
     text-align: center;
     max-width: 1000px;
@@ -78,7 +79,6 @@ main {
     font-size: 14px;
 }
 
-/* button */
 .button {
     background-color: #3d546c;
     color: white;
