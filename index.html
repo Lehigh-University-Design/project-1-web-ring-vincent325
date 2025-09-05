@@ -7,14 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Story+Script&display=swap" rel="stylesheet">
-    <script src="rickroll.js"></script>
+    <script src="script.js"></script>
     <title>Hobby</title>
 </head>
 <body>
+	<img id="scary" src="assets/scary.png">
+
+	<div class="theme-switcher">
+		<button class="button" onclick="setTheme('default')">Default</button>
+		<button class="button" onclick="setTheme('blue')">Blue</button>
+		<button class="button" onclick="setTheme('green')">Green</button>
+		<button class="button" onclick="setTheme('red')">Red</button>
+		<button class="button" onclick="setTheme('rainbow')">Rainbow</button>
+	</div>
+
     <header>
         <h1>Coding</h1>
-        <p>Des-070 | Hobby Web-Ring | Vincent Chen</p>
-    </header>
+        <p>Des-070 | Hobby Web-Ring</p>
+	</header>
+
     <nav>
         <a href="flappy.html">flappy.exe</a> 
         <a href="whiteboard.html">whiteboard.exe</a> 
@@ -22,7 +33,6 @@
         <!-- <a href="disney.html">DisneyGPT</a> -->
     </nav>
 
-	<br>
     <main>
 		<div class="terminal">
 			<div class="terminal-header">

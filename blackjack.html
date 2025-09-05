@@ -7,10 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Story+Script&display=swap" rel="stylesheet">
-    <script src="rickroll.js"></script>
+    <script src="script.js"></script>
     <title>Hobby</title>
 </head>
 <body>
+  
+    <img id="scary" src="assets/scary.jpg">
+
+    <div class="theme-switcher">
+        <button class="button" onclick="setTheme('default')">Default</button>
+        <button class="button" onclick="setTheme('blue')">Blue</button>
+        <button class="button" onclick="setTheme('green')">Green</button>
+        <button class="button" onclick="setTheme('red')">Red</button>
+        <button class="button" onclick="setTheme('rainbow')">Rainbow</button>
+    </div>
+
     <header>
         <h1>Coding</h1>
         <p>Des-070 | Hobby Web-Ring | Vincent Chen</p>
@@ -22,13 +33,13 @@
         <a href="blackjack.html">blackjack.exe</a>
         <!-- <a href="disney.html">DisneyGPT</a> -->
     </nav>
-    
+
     <main>
         <h2>Blackjack</h2>
-        <img src="assets/blackjack.png" alt="Blackjack Game" class="project-image">
-
         <p>This is a Blackjack card game where you play against the CPU dealer</p>
-        
+        <img src="assets/blackjack.png" alt="Blackjack Game" class="project-image">
+        <br>
+        <br>
         <button class="button" onclick="rickRoll()">Try It Out Yourself!</button>
         <a href="index.html" class="button">Back to Home</a>
     </main>

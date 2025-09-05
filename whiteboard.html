@@ -7,10 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Story+Script&display=swap" rel="stylesheet">
-    <script src="rickroll.js"></script>
+    <script src="script.js"></script>
     <title>Hobby</title>
 </head>
 <body>
+    <div class="theme-switcher">
+        <button class="button" onclick="setTheme('default')">Default</button>
+        <button class="button" onclick="setTheme('blue')">Blue</button>
+        <button class="button" onclick="setTheme('green')">Green</button>
+        <button class="button" onclick="setTheme('red')">Red</button>
+    </div>
+
     <header>
         <h1>Coding</h1>
         <p>Des-070 | Hobby Web-Ring | Vincent Chen</p>
@@ -25,10 +32,10 @@
 
     <main>
         <h2>Collaborative Whiteboard App</h2>
-        <img src="assets/whiteboard.png" alt="Whiteboard App" class="project-image">
-        
         <p>Real-time collaborative whiteboard application with multi-user support.</p>
-        
+        <img src="assets/whiteboard.png" alt="Whiteboard App" class="project-image">
+        <br>
+        <br>
         <button class="button" onclick="rickRoll()">Try It Out Yourself!</button>
         <a href="index.html" class="button">Back to Home</a>
     </main>
