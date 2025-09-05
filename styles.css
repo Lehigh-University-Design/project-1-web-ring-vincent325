@@ -15,13 +15,14 @@ body {
 header {
     color: #00d4ff;
     text-align: center;
-    padding: 30px;
+    padding: 15px 20px 10px 20px;
 }
 
 header h1 {
     font-size: 48px;
     color: #17ffff;
     text-shadow: 0 0 30px #17ffff;
+    margin: 10px 0 5px 0;
 }
 
 header p {
@@ -30,21 +31,22 @@ header p {
 
 nav {
     text-align: center;
-    padding: 15px;
-    color: white; 
-    font-size: 16px; 
+    padding: 14px 20px;
+    background-color: rgba(1, 68, 68, 0.3);  /* Semi-transparent dark cyan */
+    border-top: 1px solid #17ffff34;  /* 33 at the end = transparency */
+    border-bottom: 1px solid #17ffff34;
 }
 
 nav a {
-    color: #17ffff;
+    color: #18b54f;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    margin: 0 20px;
+    font-size: 14px;
+    padding: 5px 10px;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    color: #39c6c6;
+    color: rgb(0, 255, 26);
 }
 
 .button {
@@ -55,7 +57,7 @@ nav a:hover {
     text-decoration: none;
     display: inline-block;
     margin: 5px;
-    box-shadow: 0 0 20px #17ffff;
+    box-shadow: 0 0 15px #31afaf;
     cursor: pointer;
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
@@ -66,7 +68,7 @@ nav a:hover {
 .button:hover {
     background-color: #39c6c6;
     color: black;
-    box-shadow: 0 0 40px #17ffff;
+    box-shadow: 0 0 15px #31afaf;
 }
 
 main {
@@ -92,7 +94,7 @@ main {
 }
 
 .project-box:hover {
-    box-shadow: 0 0 30px #17ffff;
+    box-shadow: 0 0 15px #31afaf;
     transform: scale(1.05);
 }
 
@@ -106,19 +108,18 @@ main {
     font-size: 14px;
 }
 
-
 .project-image {
     width: 750px;
     height: auto;
     border: 1px solid #17ffff;
-    box-shadow: 0 0 10px #17ffff;
+    box-shadow: 0 0 15px #31afaf;
 }
 
 .gif-image {
     width: 300px;
     height: auto;
     border: 1px solid #17ffff;
-    box-shadow: 0 0 10px #17ffff;
+    box-shadow: 0 0 15px #31afaf;
 }
 
 /* Terminal Container */
@@ -127,7 +128,7 @@ main {
     margin: 0 auto;
     background-color: #000000;
     border: 2px solid #17ffff;
-    box-shadow: 0 0 30px #17ffff;
+    box-shadow: 0 0 15px #31afaf;
 }
 
 .terminal-header {
@@ -145,7 +146,7 @@ main {
 }
 
 .red {
-    color: #ff5f56;
+    color: #f90f02;
 }
 
 .yellow {
