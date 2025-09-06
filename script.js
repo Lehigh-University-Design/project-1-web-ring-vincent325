@@ -65,14 +65,26 @@ function setTheme(theme) {
         root.style.setProperty('--nav-background-color', '#150505');
         root.style.setProperty('--grid-line-color', 'rgba(255, 48, 48, 0.25)');
     }
+    else if (theme === 'purple') {
+        root.style.setProperty('--primary-color', '#bf00ff');
+        root.style.setProperty('--secondary-color', '#ff00ff');
+        root.style.setProperty('--shadow-color', '#ff00a0');
+        root.style.setProperty('--background-color', '#0a0012');
+        root.style.setProperty('--text-primary', '#f0d0ff');
+        root.style.setProperty('--text-secondary', '#b080d0');
+        root.style.setProperty('--link-color', '#e060ff');
+        root.style.setProperty('--link-hover-color', '#ff40ff');
+        root.style.setProperty('--bg-surface', '#150020');
+        root.style.setProperty('--bg-elevated', '#1f0030');
+        root.style.setProperty('--nav-background-color', '#0d0018'); 
+        root.style.setProperty('--grid-line-color', 'rgba(191, 0, 255, 0.15)'); 
+    }
     else if (theme === 'rainbow') {
         document.getElementById('scary').style.display = 'block';
+        setTimeout(function() {
+            document.getElementById('scary').style.display = 'none';
+        }, 1500);
         return;
     }
 }
 
-window.onload = function() {
-    document.getElementById('scary').onclick = function() {
-        this.style.display = 'none';
-    };
-};
