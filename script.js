@@ -83,7 +83,7 @@ function setTheme(theme) {
         document.getElementById('scary').style.display = 'block';
         setTimeout(function() {
             document.getElementById('scary').style.display = 'none';
-        }, 1500);
+        }, 1000);
         return;
     }
 }
