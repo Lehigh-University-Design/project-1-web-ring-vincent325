@@ -1,5 +1,9 @@
-function rickRoll() {
-    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+function scare() {
+    document.getElementById('scary').style.display = 'block';
+    setTimeout(function() {
+        document.getElementById('scary').style.display = 'none';
+    }, 1000);
+    return;
 }
 
 function setTheme(theme) {
